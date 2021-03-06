@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>JS</title>
+<script type="text/javascript">
+
+function avg(data)
+{ 
+  var i;
+  var sum=0;
+  i = data["count"];
+  for(var p=0;p<=i-1;p++)
+  {
+    s =data["employees"][p]["salary"];
+ sum = sum + s;
+  }
+  var average = sum / i;
+  
+  alert(average);
+
+} 
+avg({ "count":3, "employees":
+[{ "name":"John", "salary":30000 },
+ { "name":"Bob", "salary":60000 },
+ { "name":"Jenny", "salary":50000 } 
+] 
+ }) // 呼叫 avg 函式 
+
+</script>
+</head>
+<body>
+</body>
+</html>
