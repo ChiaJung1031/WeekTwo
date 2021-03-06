@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>Javascript</title>
+	<script type="text/javascript">
+		function twoSum(nums, target){
+			for(var i = 0;i<=nums.length;i++){
+				for(var j=i+1;j<=nums.length;j++){
+					if(nums[i]+nums[j]==target){
+						return ([i,j])
+					}
+						
+				}
+			}
+		}
+		result=twoSum([2,11,7,15],9);
+		console.log(result);
+	</script>
+</head>
+<body>
+</body>
+</html>
